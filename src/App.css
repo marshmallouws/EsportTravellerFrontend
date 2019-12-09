@@ -1,0 +1,175 @@
+#root {
+  padding-top: 60px;
+}
+
+.data-wrapper {
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.data-wrapper h1 {
+  color: white;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.header {
+  -webkit-box-shadow: 0px 11px 31px 0px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 11px 31px 0px rgba(0, 0, 0, 0.22);
+  box-shadow: 0px 11px 31px 0px rgba(0, 0, 0, 0.22);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.header .logo {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+  color: var(--primary-light);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: oblique;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.header .logo img {
+  max-height: 30px;
+  margin-right: 10px;
+}
+
+.header img {
+  max-height: 30px;
+}
+
+.info-box {
+  padding: 10pt;
+  background-color: #fff;
+  border-radius: 10pt;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+}
+
+h2.headline {
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+}
+
+.page-wrapper {
+  max-width: 1280px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 100px;
+}
+
+.content {
+}
+
+.content table {
+  width: 100%;
+}
+
+.content table > tbody > tr:last-child > td > div.event-box {
+  margin-bottom: 0px;
+}
+
+.sidebar {
+  background-color: var(--primary-light);
+  border-radius: 5px;
+  margin-top: 48px;
+  padding-top: 10px;
+}
+
+.sidebar-box {
+  margin-bottom: 20px;
+}
+
+.checkout-btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-mid);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-mid);
+  border-color: var(--primary-light);
+}
+
+.eventlist-settings {
+  padding: 15px;
+  background-color: var(--primary-dark);
+  color: var(--primary-gray);
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.event-box {
+  padding: 15px;
+  width: 100%;
+  min-height: 200px;
+  background-color: var(--primary-mid);
+  color: var(--primary-gray);
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.event-box .information {
+}
+
+.flight-list {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background-color: var(--primary-fulldark);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.event-box img {
+  max-height: 120px;
+  float: right;
+  margin: 20px;
+  max-width: 400px;
+}
+
+.event-box h3 {
+  text-align: left;
+  float: left;
+  font-size: 15pt;
+  border-bottom: 2px solid var(--primary-light);
+}
+
+.event-box .game-name {
+  max-width: max-content;
+  background-color: var(--primary-dark);
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.event-box hr {
+  background: var(--primary-light);
+  height: 1px;
+}
+
+.event-box-footer {
+  margin-top: 50px;
+}
+
+.ticket-information {
+  margin-bottom: 30px !important;
+}
+
+.clear-floats {
+  clear: both;
+}
