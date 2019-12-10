@@ -29,7 +29,7 @@ const EventList = ({ data, selecter, handleBookmarks, username}) => {
               <div className="eventlist-settings">
                 <h6>Advanced Search</h6>
                 <div className="form-group">
-                  <label htmlFor="gameSelect">Game</label>
+                  <label htmlFor="gameSelect">Game :</label>
                   <select
                     className="form-control"
                     id="gameSelect"

@@ -32,25 +32,32 @@ function Login(props) {
     if(redirect) {
       return <Redirect to="/" />
     }
+
+    // ----------------------------------- added by ftf the several classnames-----------------------------------
   
     return (
       <div className="container container-small">
         <div className="data-wrapper">
-          <h2>Login</h2><br />
-          <form className="form-signin" onSubmit={login} onChange={onChange} >
-            <div className="form form-group">
-              <input className="form-control" placeholder="User Name" id="username" />
-            </div><div className="form-group">
-              <input className="form-control" type="password" placeholder="Password" id="password" /> <br />
-              <button className="btn btn-primary">Login</button>
-            </div>
-          </form>
-          <Link to="/register">
-          Link to Register
-        </Link>
+          <div className='height60'></div>
+          <div className="form-box">
+            <h2 className="align-center">Login</h2><br/><br/>
+            <form className="form-signin" onSubmit={login} onChange={onChange} >
+              <div className="form form-group">
+                <input className="form-control" placeholder="User Name" id="username" required/>
+              </div><br/>
+              <div className="form-group">
+                <input className="form-control" type="password" placeholder="Password" id="password" required/> <br /><br/>
+                <button className="btn btn-primary login-button">Login</button>
+              </div>
+            </form>
+            <Link to="/register">
+            Don't have an account? Register here
+            </Link>
+          </div>
         </div>
       </div>
     )
   }
+
 
   export default Login;

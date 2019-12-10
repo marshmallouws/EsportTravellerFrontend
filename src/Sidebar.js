@@ -23,11 +23,11 @@ const Sidebar = ({
               {t.event_game}
             </h6>
             <p>
-              1x{" "}
+              <span className="padding-right15">1x{" "}
               {t.price === undefined
                 ? "Ticket 500.00 DKK"
-                : "Flight " + t.price + " DKK"}
-              <button
+                : "Flight " + t.price + " DKK"}</span>
+              <button className="btn btn-danger"
                 onClick={() => {
                   setTickets([...tickets.filter(tt => tt.sId !== t.sId)]);
                 }}
@@ -68,7 +68,7 @@ const Sidebar = ({
     );
 
   const cart = (
-    <div className="sidebar-box">
+    <div className="sidebar-box"><br/>
       <h4>Shopping Cart</h4>
       {cartItems}
       {checkoutBtn}

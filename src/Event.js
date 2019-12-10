@@ -23,7 +23,7 @@ const Event = ({
     event.end_at == null
       ? "TBA"
       : event.end_at.replace("T", " ").replace("Z", "");
-  const eventTimes = beginTime + " - " + endTime;
+  const eventTimes = beginTime + " ~ " + endTime;
 
   const link = returnLink ? (
     <Link to="/" className="btn btn-primary">
@@ -71,9 +71,9 @@ const Event = ({
     <React.Fragment>
       <div className="ticket-information m-2">
         <h4>Tickets</h4>
-        <h6>1x Event Ticket 500.00 DKK</h6>
-        <button
-          className="btn btn-primary"
+        <h6>1x Event Ticket 500.00 DKK</h6><br/>
+        <button 
+          className="btn btn-success"
           onClick={() => {
             setTickets([...tickets, ticketObj]);
           }}
@@ -89,7 +89,8 @@ const Event = ({
 
   return (
     <div className="event-box">
-      <img src={event.league.image_url} alt={event.league.name} />
+      <br/>
+      <img src={event.league.image_url} alt={event.league.name}/>
       <div className="information">
         <div
           className="game-name"
@@ -97,7 +98,7 @@ const Event = ({
           onClick={selector}
         >
           {event.videogame.name.toUpperCase()}
-        </div>
+        </div><br/>
         <h3>
           {event.full_name} - {event.league.name}
         </h3>
@@ -116,7 +117,7 @@ const Event = ({
           {link}
           {facade.getToken() ? (
             <button
-              className="btn btn-secondary"
+              className="btn btn-secondary margin-left20"
               onClick={() => {
                 handleBookmarks(event.id);
               }}
